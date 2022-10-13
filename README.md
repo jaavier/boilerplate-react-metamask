@@ -14,8 +14,8 @@ Boilerplate to connect React app to Web3 using Metamask.
 # Connect a Smart Contract in simple steps
 
 - `import dapp from "../metamask/dapp";`
-- `import { useMetamask, loadSmartContract } from "./metamask";
+- `import { useMetamask, loadSmartContract } from "./metamask";`
 - `const { user, setContract } = useMetamask();`
 - `const smartContract = loadSmartContract(dapp.address, dapp.abi); // <- returns a contract handler`
 - `setContract(smartContract);`
-- ✔︎✔︎
+- 🚀🚀
