@@ -7,6 +7,6 @@ Boilerplate to connect React app to Web3 using Metamask.
 `import { MetamaskProvider } from "./metamask/context";`
 
 * Get information about wallet connected to the browser
-- Import **useMetamask** `import { useMetamask, ConnectMetamask } from "./metamask";
+- Import **useMetamask** `import { useMetamask, ConnectMetamask } from "./metamask";`
 - `const { user } = useMetamask();`
 - `if (!user.isConnected) return <ConnectMetamask />`
