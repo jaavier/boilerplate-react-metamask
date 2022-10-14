@@ -1,10 +1,5 @@
 import React, { useEffect } from "react";
-import requestAccounts from "./requestAccounts";
-
-type User = {
-  isConnected: boolean;
-  address: string;
-};
+import requestAccounts from "./helpers/requestAccounts";
 
 type Values = {
   user: User;
@@ -16,10 +11,7 @@ type Values = {
 const initialValues: Values = {
   contract: {},
   setContract: () => {},
-  user: {
-    address: "",
-    isConnected: false
-  },
+  user: {} as User,
   setUser: () => {}
 };
 
@@ -46,6 +38,10 @@ const MetamaskProvider = ({ children }: any) => {
     window.ethereum.on("accountsChanged", async (accounts: any) => {
       getUserInfo();
     });
+
+  useEffect(() => {
+    getUserInfo();
+  }, []);
 
   return (
     <MetamaskContext.Provider value={values}>

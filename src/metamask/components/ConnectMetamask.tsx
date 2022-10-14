@@ -1,4 +1,4 @@
-import requestAccounts from "./requestAccounts";
+import requestAccounts from "../helpers/requestAccounts";
 
 const ConnectMetamask = () => {
   return (
