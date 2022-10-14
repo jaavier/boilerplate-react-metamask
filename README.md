@@ -1,24 +1,52 @@
-# boilerplate-react-metamask
+# Boilerplate-react-metamask
 Boilerplate to connect React app to Web3 using Metamask.
 
-# how to use?
+# How to use?
+Wrap your **App** in `<MetamaskProvider></MetamaskProvider>`
 
-* Wrap your App in **<MetamaskProvider>**
-`import { MetamaskProvider } from "./metamask/context";`
+**App.jsx**
+```
+import { MetamaskProvider } from ". /metamask";
+import HelloMetamask from "./components/HelloMetamask";
 
-* Get information about wallet connected to the browser
-- Import **useMetamask** `import { useMetamask, ConnectMetamask } from "./metamask";`
-- `const { user } = useMetamask();`
-- `if (!user.isConnected) return <ConnectMetamask />`
+export default function App() {
+  return (
+    <MetamaskProvider>
+      <HelloMetamask />
+    </MetamaskProvider>
+  );
+}
+```
 
-# Connect a Smart Contract in simple steps
-```import { useMetamask, ConnectMetamask, loadSmartContract } from "../metamask";
+# Connecting to Metamask
+Use the component `<ConnectMetamask />` to request access to use Metamask
+
+```
+import React from "react";
+import { useMetamask, ConnectMetamask } from "../metamask";
+
+export default function MyWallet(props: any) {
+  const { user } = useMetamask();
+  
+  if (!user.isConnected) return <ConnectMetamask />
+  
+  return <div>My wallet is: {user.address}</div>;
+}
+```
+
+# Connect a React Component to a Smart Contract in simple steps 🚀
+* `loadSmartContract(address, abi)` to get a handler for your Smart Contract
+* `contract` is the object with methods and variables from your Smart Contract
+
+```
+import { useMetamask, ConnectMetamask, loadSmartContract } from "../metamask";
 import dapp from "../metamask/dapp";
 
 export default function HelloMetamask() {
-  const { user, setContract } = useMetamask();
+  const { user, contract, setContract } = useMetamask();
   const setSmartContract = () => {
-    setContract(loadSmartContract(dapp.address, dapp.abi));
+    const smartContract = loadSmartContract(dapp.address, dapp.abi);
+    setContract(smartContract);
   };
 
   useEffect(() => {
