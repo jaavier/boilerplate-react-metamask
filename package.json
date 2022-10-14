@@ -1,8 +1,12 @@
 {
-  "name": "fix-ethereum-event-listener",
+  "name": "boilerplate-react-web3-metamask",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Boilerplate to connect React to Web3 using Metamask",
+  "keywords": [
+    "typescript",
+    "react",
+    "starter"
+  ],
   "license": "MIT",
   "main": "src/index.tsx",
   "dependencies": {
