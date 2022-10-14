@@ -5,7 +5,9 @@
   "keywords": [
     "typescript",
     "react",
-    "starter"
+    "metamask",
+    "web3",
+    "blockchain"
   ],
   "license": "MIT",
   "main": "src/index.tsx",

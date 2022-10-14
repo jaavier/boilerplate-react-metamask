@@ -47,10 +47,6 @@ const MetamaskProvider = ({ children }: any) => {
       getUserInfo();
     });
 
-  useEffect(() => {
-    getUserInfo();
-  }, []);
-
   return (
     <MetamaskContext.Provider value={values}>
       {children}
