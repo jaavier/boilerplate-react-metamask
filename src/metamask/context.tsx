@@ -42,9 +42,10 @@ const MetamaskProvider = ({ children }: any) => {
   };
   const values: Values = { user, setUser, contract, setContract };
 
-  window.ethereum.on("accountsChanged", async (accounts: any) => {
-    getUserInfo();
-  });
+  if (window.ethereum)
+		window.ethereum.on("accountsChanged", async (accounts: any) => {
+			getUserInfo();
+		});
 
   useEffect(() => {
     getUserInfo();
