@@ -1,13 +1,12 @@
 {
-  "name": "boilerplate-react-web3-metamask",
+  "name": "boilerplate-react-metamask-web3",
   "version": "1.0.0",
-  "description": "Boilerplate to connect React to Web3 using Metamask",
+  "description": "Boilerplate to connect React app to Web3 using Metamask",
   "keywords": [
-    "typescript",
-    "react",
-    "metamask",
     "web3",
-    "blockchain"
+    "metamask",
+    "ethereum",
+    "html"
   ],
   "license": "MIT",
   "main": "src/index.tsx",
