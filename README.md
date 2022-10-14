@@ -1,3 +1,9 @@
+# REQUEST CONNECTION
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/990085/195737168-747e7f87-b20c-49c7-b68a-346117eba184.png">
+
+# CONNECTED 
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/990085/195737336-3688d32f-2059-4187-8f17-ecfb1269ee71.png">
+
 # boilerplate-react-metamask
 Boilerplate to connect React app to Web3 using Metamask.
 
