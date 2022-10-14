@@ -9,6 +9,7 @@
       "dom",
       "es2015"
     ],
+    "strictNullChecks": false,
     "jsx": "react-jsx",
     "target": "es5",
     "allowJs": true,

@@ -1,4 +1,4 @@
-const abi = [
+const abi: Record<string, any>[] = [
   {
     inputs: [],
     stateMutability: "payable",
