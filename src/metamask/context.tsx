@@ -11,7 +11,10 @@ type Values = {
 const initialValues: Values = {
   contract: {},
   setContract: () => {},
-  user: {} as User,
+  user: {
+    address: "",
+    isConnected: false
+  },
   setUser: () => {}
 };
 
