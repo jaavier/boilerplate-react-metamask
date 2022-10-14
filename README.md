@@ -12,7 +12,7 @@ Boilerplate to connect React app to Web3 using Metamask.
 - `if (!user.isConnected) return <ConnectMetamask />`
 
 # Connect a Smart Contract in simple steps
-````import { useMetamask, ConnectMetamask, loadSmartContract } from "../metamask";
+```import { useMetamask, ConnectMetamask, loadSmartContract } from "../metamask";
 import dapp from "../metamask/dapp";
 
 export default function HelloMetamask() {
