@@ -62,4 +62,4 @@ You are ready! 🚀🚀
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/990085/195737168-747e7f87-b20c-49c7-b68a-346117eba184.png">
 
 # After connection
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/990085/195737336-3688d32f-2059-4187-8f17-ecfb1269ee71.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/990085/195961727-d52fc077-e3e1-445a-979d-5f6b95f966d5.png">
