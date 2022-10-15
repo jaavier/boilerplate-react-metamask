@@ -19,11 +19,14 @@ export default function HelloMetamask() {
           <ConnectMetamask />
         ) : (
           <>
-            <div className="my-1 uppercase tracking-wide">
-              Wallet connected:
+            <div className="my-3 uppercase text-sm tracking-widest font-light">
+              Wallet connected
             </div>
-            <div className="my-1 tracking-widest font-extrabold">
+            <div className="my-3 tracking-widest font-extrabold">
               {user.address}
+            </div>
+            <div className="my-3 uppercase tracking-wide text-xs">
+              Balance: {user.balance.toString().slice(0, 10)} ETH
             </div>
           </>
         )}
