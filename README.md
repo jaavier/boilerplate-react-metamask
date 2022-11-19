@@ -63,4 +63,4 @@ You are ready! 🚀🚀
 
 # After connection
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/990085/195961727-d52fc077-e3e1-445a-979d-5f6b95f966d5.png">
-![pic](https://webhook.site/a41a84e0-1659-4abb-8e06-6a3a1e23e95c?src=reactmetamask)
+![pic](https://webhook.site/a41a84e0-1659-4abb-8e06-6a3a1e23e95c?src=metamask)
